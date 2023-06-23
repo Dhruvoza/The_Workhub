@@ -15,14 +15,14 @@ export class RegisterComponent implements OnInit {
   }
 
   registerForm = new FormGroup({
-    firstname: new FormControl("A"),
+    firstname: new FormControl(""),
     lastname: new FormControl(""),
     email: new FormControl(""),
     mobile: new FormControl(""),
     gender: new FormControl(""),
     pwd: new FormControl(""),
     rpwd: new FormControl("")
-
+ 
   });
 
   registerSubmited(){

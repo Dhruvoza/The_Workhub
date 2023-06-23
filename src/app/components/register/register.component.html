@@ -11,11 +11,11 @@
   <div class="container">
     <div class="title">Registration</div>
     <div class="content">
-      <form [formGroup]="registerForm" action="#">
+      <form [formGroup]="registerForm" (ngSubmit)="registerSubmited()">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" class="form-control" id="firstname" formControlName="firstname">
           </div>
           <div class="input-box">
             <span class="details">Username</span>
@@ -29,7 +29,7 @@
             <span class="details">Phone Number</span>
             <input type="text" placeholder="Enter your number" required>
           </div>
-          <div class="input-box">
+          <div class="input-box"> 
             <span class="details">Password</span>
             <input type="text" placeholder="Enter your password" required>
           </div>
